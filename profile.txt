@@ -1,5 +1,4 @@
-# Import-Module posh-git
-oh-my-posh init pwsh --config ~/atomicBit.omp.json | Invoke-Expression
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\star.omp.json" | Invoke-Expression
 
 function dwr { dotnet watch run }
 function gs { git status }
@@ -18,5 +17,3 @@ function kill {
 }
 
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
-
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\star.omp.json" | Invoke-Expression
