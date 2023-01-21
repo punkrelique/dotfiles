@@ -1,8 +1,13 @@
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\star.omp.json" | Invoke-Expression
-
 function dwr { dotnet watch run }
+function dr { dotnet run } 
+
 function gs { git status }
+
 function lg { lazygit }
+
+function dcb { docker compose build }
+function dcu { docker compose up } 
+function dcub { docker compose up --build }
 
 function ps {
   Param($Name)
@@ -15,5 +20,10 @@ function kill {
 	Param($Number)
 	taskkill /pid $Number
 }
+
+function fdif {
+	Param($Left, $Right) 
+	WinMergeU -e $Left $Right
+ } 
 
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
