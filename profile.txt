@@ -3,7 +3,7 @@ function dr { dotnet run }
 
 function gs { git status }
 
-function lg { lazygit }
+function lg { lazygit } # https://github.com/jesseduffield/lazygit
 
 function dcb { docker compose build }
 function dcu { docker compose up } 
@@ -21,6 +21,7 @@ function kill {
 	taskkill /pid $Number
 }
 
+# https://winmerge.org/
 function fdif {
 	Param($Left, $Right) 
 	WinMergeU -e $Left $Right
