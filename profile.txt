@@ -9,7 +9,11 @@ function dcb { docker compose build }
 function dcu { docker compose up } 
 function dcub { docker compose up --build }
 
-Function rewsl { Get-Service LxssManager | Restart-Service }
+Set-Alias -Name k -Value kubectl
+Set-Alias -Name g -Value git
+Set-Alias -Name d -Value docker
+
+function rewsl { Get-Service LxssManager | Restart-Service }
 
 function ps {
   Param($Name)
