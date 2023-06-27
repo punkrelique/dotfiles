@@ -31,6 +31,15 @@ function kill {
 function fdif {
 	Param($Left, $Right) 
 	WinMergeU -e $Left $Right
- } 
+ }
+
+# https://syncthing.net/
+function sync {
+    $process = Start-Process -FilePath "C:\Program Files\syncthing\syncthing.exe" -ArgumentList "--no-console", "--no-browser" -PassThru
+    Write-Host "The Syncthing is running at: " -NoNewline
+    Write-Host "http://localhost:8384" -ForegroundColor Green
+    Read-Host "Press any button to kill the process"
+    Stop-Process -Name "syncthing"
+}
 
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
