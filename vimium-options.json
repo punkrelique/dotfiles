@@ -1,0 +1,29 @@
+{
+  "hideUpdateNotifications": true,
+  "ignoreKeyboardLayout": true,
+  "scrollStepSize": 100,
+  "grabBackFocus": true,
+  "settingsVersion": "2.3",
+  "exclusionRules": [
+    {
+      "passKeys": "f",
+      "pattern": "https?://www.youtube.com/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https://sharplab.io/"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://vkplay.live/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://sharplab.io/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://pwn.college/*"
+    }
+  ]
+}
